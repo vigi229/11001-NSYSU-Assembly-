@@ -1,0 +1,26 @@
+TEST_S:
+    STREQ r0,[r1]
+    LDRNE r0,[r1]
+    STRB r0,[r1]
+    LDRB r0,[r1]
+    BCS	TEST_S
+    BLCC TEST_S
+    BLX TEST_S
+    ANDMI r0,r0,r1
+    EORPL r0,r0,r1
+    SUBVS r0,r0,r1
+    RSBVC r0,r0,r1
+    ADDHI r0,r0,r1
+    ADCLS r0,r0,r1
+    SBCGE r0,r0,r1
+    RSCLT r0,r0,r1
+    TSTGT r0,r1
+    TEQLE r0,r1
+    CMNAL r0,r1
+    MOV r0,r1
+    ORRHI r0,r0,r1
+    BICAL r0,r0,r1
+    MVN r0,r1
+    MUL r0,r2,r1
+    PUSH {r0,r1}
+    CMPLT r0,r1

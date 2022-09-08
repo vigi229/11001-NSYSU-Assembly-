@@ -1,0 +1,2 @@
+arm-none-eabi-gcc -T generic-hosted.ld reverse.S -o reverse
+arm-none-eabi-run reverse

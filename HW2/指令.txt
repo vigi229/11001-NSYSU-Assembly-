@@ -1,0 +1,4 @@
+arm-none-eabi-gcc -T generic-hosted.ld deasm.S -o deasm
+arm-none-eabi-run deasm
+
+cd Desktop/大三上/組合語言/HW2

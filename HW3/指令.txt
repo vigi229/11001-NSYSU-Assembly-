@@ -1,0 +1,13 @@
+arm-none-eabi-gcc -T generic-hosted.ld int2float.S -o int2float
+arm-none-eabi-run int2float
+
+cd Desktop/大三上/組合語言/HW3
+
+*r0 存argv 字串長度、r1 argc字串
+
+r4	指向原先string
+r5	signed bit
+r6	strtol後的數字(int)
+r7	E移幾位數
+r8	E+127
+
